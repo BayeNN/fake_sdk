@@ -1,3 +1,7 @@
 release 3.0.0
 	bug 1234: descr
 	feature 1234: description
+	
+release 3.0.1
+	bug 223232: descr
+	feature 3232: description	
