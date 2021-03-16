@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentItems>
+  <contentItemData category="API References" itemURI="https://docs.silabs.com/#section-mcu-wireless" label="Gecko Platform API Reference Guide">
+    <description>API reference for CMSIS, EMLIB Peripheral Library, Gecko Platform driver library, middleware and board support packages.</description>
+  </contentItemData>
+  <contentItemData category="Release Notes" itemURI="../app/mcu_example/MCU_SDK_Release_Notes.pdf" label="32-bit MCU SDK Release Notes">
+    <description>A detailed overview of highlights, fixes and improvements in this release of 32-bit MCU SDK.</description>
+  </contentItemData>
+  <contentItemData category="Release Notes" itemURI="../app/mcu_example/Gecko_Platform_Release_Notes.pdf" label="Gecko Platform Release Notes">
+    <description>A detailed overview of highlights, fixes and improvements in this release of Gecko Platform.</description>
+  </contentItemData>
+</contentItems>

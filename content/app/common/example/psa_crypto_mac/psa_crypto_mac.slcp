@@ -1,0 +1,83 @@
+project_name: psa_crypto_mac
+package: platform
+quality: production
+label: Platform - PSA Crypto MAC
+description: >
+  This example project demonstrates the message authentication code (MAC) API.
+category: Example|Platform
+source:
+  - path: main.c
+  - path: app_init.c
+  - path: app_process.c
+  - path: app_psa_crypto_mac.c
+  - path: app_psa_crypto_key.c
+include:
+  - path: .
+    file_list:
+    - path: app_init.h
+    - path: app_process.h
+    - path: app_psa_crypto_mac.h
+    - path: app_psa_crypto_key.h
+    - path: app_psa_crypto_macro.h
+other_file:
+  - path: "readme.html"
+component:
+  - id: psa_crypto
+  - id: psa_its
+  - id: psa_crypto_hmac
+  - id: mbedtls_cmac
+  - id: mbedtls_hash
+  - id: mbedtls_sha512
+  - id: sl_system
+  - id: device_init
+  - id: printf
+  - id: iostream
+  - id: iostream_retarget_stdio
+  - id: iostream_usart
+    instance: [vcom]
+requires:
+  - name: device_init_hfrco
+    condition: [device_sdid_84]
+  - name: device_init_hfrco
+    condition: [device_sdid_89]
+  - name: device_init_hfrco
+    condition: [device_sdid_100]
+  - name: device_init_hfrco
+    condition: [device_sdid_103]
+  - name: device_init_hfrco
+    condition: [device_sdid_106]
+  - name: device_init_hfrco
+    condition: [device_sdid_200]
+  - name: device_init_hfrco
+    condition: [device_sdid_205]
+  - name: device_init_hfrco
+    condition: [device_sdid_210]
+  - name: device_init_hfxo
+    condition: [device_sdid_80, device_has_radio]
+  - name: device_init_hfxo
+    condition: [device_sdid_95, device_has_radio]
+  - name: radio_config_simple_connect_singlephy
+    condition: [device_sdid_80, device_has_radio]
+  - name: radio_config_simple_connect_singlephy
+    condition: [device_sdid_95, device_has_radio]
+  - name: connect_app_framework_common
+    condition: [device_sdid_80, device_has_radio]
+  - name: connect_app_framework_common
+    condition: [device_sdid_95, device_has_radio]
+configuration:
+  - name: SL_DEVICE_INIT_HFRCO_BAND
+    value: cmuHFRCOFreq_38M0Hz
+    condition: [device_series_1]
+  - name: SL_DEVICE_INIT_HFRCO_BAND
+    value: cmuHFRCODPLLFreq_38M0Hz
+    condition: [device_series_2]
+  - name: SL_BOARD_ENABLE_VCOM
+    value: 1
+  - name: SL_IOSTREAM_USART_VCOM_CONVERT_BY_DEFAULT_LF_TO_CRLF
+    value: "true"
+define:
+  - name: DEBUG_EFM
+  - name: PSA_CRYPTO_PRINT
+toolchain_settings:
+  - option: optimize
+    value: debug

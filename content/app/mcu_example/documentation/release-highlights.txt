@@ -1,0 +1,9 @@
+What's new in 32-Bit MCU SDK 6.0.1.0
+* Underlying platform changes only.
+
+What's new in 32-Bit MCU SDK 6.0.0.0
+* Added platform examples for EFM32 series 0 and series 1 devices
+* Reduced number of sample applications for EFM32 hardware kits
+* Reduced pre-compiled demo list for EFM32 hardware kits
+
+

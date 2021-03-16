@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ASCII"?>
+<model:MDescriptors xmlns:model="http://www.silabs.com/ss/Studio.ecore">
+  <descriptors name="tensorflow_lite_micro_helloworld" label="TensorFlow Lite Micro - Hello World" description="This application demonstrates a model trained to replicate a sine function.  The model is continuously fed with values ranging from 0 to 2pi, and the  output of the model is used to control the intensity of an LED. &#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="projectFilePaths" value="example/tensorflow_lite_micro_helloworld/tensorflow_lite_micro_helloworld.slcp"/>
+    <properties key="readmeFiles" value=""/>
+    <properties key="boardCompatibility" value="brd2200a brd2201a brd2204a brd2207a brd2400a brd2500a brd2501a brd2503a brd4100a brd4103a brd4104a brd4150a brd4150b brd4150c brd4151a brd4152a brd4153a brd4155a brd4158a brd4159a brd4161a brd4162a brd4163a brd4164a brd4165b brd4166a brd4167a brd4168a brd4169a brd4169b brd4170a brd4171a brd4172a brd4172b brd4173a brd4174a brd4174b brd4175a brd4176a brd4177a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4185a brd4190a brd4200a brd4201a brd4201c brd4201d brd4202a brd4203a brd4204a brd4204b brd4206a brd4207a brd4250a brd4250b brd4251a brd4251b brd4251d brd4252a brd4253a brd4254a brd4255a brd4256a brd4257a brd4257b brd4258a brd4258b brd4259a brd4261a brd4262a brd4262b brd4263a brd4263b brd4264a brd4264b brd4265a brd4300a brd4300b brd4301a brd4302a brd4303a brd4304a brd4305a brd4305c brd4305d brd4305e brd4306a brd4306b brd4306c brd4306d brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm1.* .*bgm13.* .*bgm22.* .*efm32g.* .*efm32gg.* .*efm32gg11b.* .*efm32gg12b.* .*efm32hg.* .*efm32lg.* .*efm32pg12b.* .*efm32pg1b.* .*efm32pg22.* .*efm32tg.* .*efm32tg11b.* .*efm32wg.* .*efm32zg.* .*efr32bg12p.* .*efr32bg13p.* .*efr32bg1b.* .*efr32bg1p.* .*efr32bg22.* .*efr32fg12p.* .*efr32fg13p.* .*efr32fg14p.* .*efr32fg1p.* .*efr32fg23.* .*efr32mg12p.* .*efr32mg13p.* .*efr32mg14p.* .*efr32mg1p.* .*efr32mg21.* .*efr32mg22.* .*efr32zg13l.* .*efr32zg13p.* .*efr32zg13s.* .*efr32zg14p.* .*efr32zg23.* .*mgm1.* .*mgm12.* .*mgm13.* .*mgm21.* .*mgm22.* .*zgm13.*"/>
+    <properties key="ideCompatibility" value="makefile-ide simplicity-ide"/>
+    <properties key="toolchainCompatibility" value="gcc"/>
+    <properties key="category" value="Example|Platform"/>
+    <properties key="quality" value="ALPHA"/>
+  </descriptors>
+  <descriptors name="tensorflow_lite_micro_microspeech" label="TensorFlow Lite Micro - Micro Speech" description="This application demonstrates a model trained to recognise the words &quot;yes&quot; and  &quot;no&quot; from speech data recorded from the microphone. The detected keywords are  transmitted over VCOM.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="projectFilePaths" value="example/tensorflow_lite_micro_microspeech/tensorflow_lite_micro_microspeech.slcp"/>
+    <properties key="readmeFiles" value=""/>
+    <properties key="boardCompatibility" value="brd2204a brd2207a brd4166a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efm32gg11b.* .*efm32gg12b.* .*efm32pg22.* .*efr32bg22.* .*efr32mg12p.*"/>
+    <properties key="ideCompatibility" value="makefile-ide simplicity-ide"/>
+    <properties key="toolchainCompatibility" value="gcc"/>
+    <properties key="category" value="Example|Platform"/>
+    <properties key="quality" value="ALPHA"/>
+  </descriptors>
+</model:MDescriptors>
