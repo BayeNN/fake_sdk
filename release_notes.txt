@@ -5,3 +5,7 @@ release 3.0.0
 release 3.0.1
 	bug 223232: descr
 	feature 3232: description	
+	
+release 3.0.3
+	bug 3333: descr
+	feature 33333 testing SDK update	
