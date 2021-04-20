@@ -1,11 +1,15 @@
 release 3.0.0
-	bug 1234: descr
-	feature 1234: description
+	bug 000000: descr
+	feature 0000: description
 	
 release 3.0.1
-	bug 223232: descr
-	feature 3232: description	
+	bug 111111: descr
+	feature 111111: description	
 	
+release 3.0.2
+	bug 22222: descr
+	feature 22222: description	
+
 release 3.0.3
 	bug 3333: descr
 	feature 33333 testing SDK update	
