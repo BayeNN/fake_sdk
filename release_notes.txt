@@ -15,5 +15,6 @@ release 3.0.3
 	feature 33333 testing SDK update	
 	
 release 3.0.4
+	bug 4444: descr
 	some blob objects are added
 	
