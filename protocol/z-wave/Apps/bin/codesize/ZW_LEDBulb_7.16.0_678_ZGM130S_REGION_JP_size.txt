@@ -1,0 +1,30 @@
+
+==========================================================
+The output of the size tool: (e.g. arm-none-ambi-size.exe)
+==========================================================
+
+ZW_LEDBulb_7.16.0_678_ZGM130S_REGION_JP.elf  :
+section              size         addr
+.nvm3App           0x3000      0x74000
+.simee             0x9000      0x77000
+.text             0x2e090          0x0
+_cc_handlers         0x70      0x2e090
+.ARM.exidx            0x8      0x2e100
+.data               0x6cc   0x20000004
+.bss               0x7620   0x200006d0
+.heap               0x200   0x20007cf0
+.stack_dummy        0x280   0x20007cf0
+.ARM.attributes      0x2e          0x0
+.comment             0x4d          0x0
+.reset_info           0x4   0x20000000
+Total             0x422f3
+
+The calculated FLASH and SRAM usage summary:
+============================================
+FLASH used for binary:  (Including only the sections: .text, _cc_handlers, .ARM.exidx, .data)
+   190420
+FLASH uses for storage: (Including only the sections: .nvm3App, .simee)
+   49152
+SRAM usage:             (Including only the sections: .data, .bss, .heap, .stack_dummy, .reset_info)
+   31396
+

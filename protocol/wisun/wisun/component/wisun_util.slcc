@@ -1,0 +1,20 @@
+id: "wisun_util"
+label: "Wi-SUN util"
+package: "wisun"
+category: "Wi-SUN"
+quality: "production"
+description: "Provide tools for Wi-SUN stack"
+root_path: "protocol/wisun/wisun"
+
+requires: 
+  - name: "wisun_stack"
+
+provides:
+  - name: "wisun_util"
+
+source:
+  - path: "src/sl_wisun_util.c"
+  - path: "inc/sl_wisun_util.h"
+
+include:
+  - path: "inc/"

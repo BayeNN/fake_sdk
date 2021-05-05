@@ -1,0 +1,26 @@
+id: "bluetooth_hci"
+label: Bluetooth Controller HCI
+package: Bluetooth
+description: "Provides HCI for Bluetooth Controller"
+
+category: Bluetooth|Controller
+quality: production
+root_path: protocol/bluetooth/bgstack/ll
+include:
+  - path: inc
+    file_list:
+      - path: sl_btctrl_hci.h
+      - path: sl_hci_common_transport.h
+provides:
+  - name: "bluetooth_hci"
+requires:
+  - name: bluetooth_controller
+conflicts:
+  - name: bluetooth_stack
+template_contribution:
+  - name: event_handler
+    value:
+      event: internal_app_init
+      include: sl_btctrl_hci.h
+      handler: sl_bthci_init_upper     
+    priority: 3

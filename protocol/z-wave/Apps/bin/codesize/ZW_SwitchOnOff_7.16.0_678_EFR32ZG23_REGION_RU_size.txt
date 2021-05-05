@@ -1,0 +1,29 @@
+
+==========================================================
+The output of the size tool: (e.g. arm-none-ambi-size.exe)
+==========================================================
+
+ZW_SwitchOnOff_7.16.0_678_EFR32ZG23_REGION_RU.elf  :
+section              size         addr
+.nvm3App           0x6000    0x806e000
+.simee             0xa000    0x8074000
+.text             0x2fda8    0x8000000
+_cc_handlers         0x68    0x802fda8
+.ARM.exidx            0x8    0x802fe10
+.data               0x7c0   0x20000000
+.bss               0x79b4   0x200007c0
+.heap               0x200   0x20008178
+.stack_dummy        0x280   0x20008178
+.ARM.attributes      0x36          0x0
+.comment             0x4d          0x0
+Total             0x4848f
+
+The calculated FLASH and SRAM usage summary:
+============================================
+FLASH used for binary:  (Including only the sections: .text, _cc_handlers, .ARM.exidx, .data)
+   198104
+FLASH uses for storage: (Including only the sections: .nvm3App, .simee)
+   65536
+SRAM usage:             (Including only the sections: .data, .bss, .heap, .stack_dummy, .reset_info)
+   32308
+

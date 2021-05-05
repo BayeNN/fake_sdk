@@ -17,4 +17,7 @@ release 3.0.3
 release 3.0.4
 	bug 4444: descr
 	some blob objects are added
+
+release 3.0.4
+	made 9K files in repo
 	

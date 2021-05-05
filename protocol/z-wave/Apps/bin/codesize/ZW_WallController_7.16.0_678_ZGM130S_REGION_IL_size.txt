@@ -1,0 +1,30 @@
+
+==========================================================
+The output of the size tool: (e.g. arm-none-ambi-size.exe)
+==========================================================
+
+ZW_WallController_7.16.0_678_ZGM130S_REGION_IL.elf  :
+section              size         addr
+.nvm3App           0x3000      0x74000
+.simee             0x9000      0x77000
+.text             0x2d800          0x0
+_cc_handlers         0x60      0x2d800
+.ARM.exidx            0x8      0x2d860
+.data               0x68c   0x20000004
+.bss               0x76e0   0x20000690
+.heap               0x200   0x20007d70
+.stack_dummy        0x280   0x20007d70
+.ARM.attributes      0x2e          0x0
+.comment             0x4d          0x0
+.reset_info           0x4   0x20000000
+Total             0x41ad3
+
+The calculated FLASH and SRAM usage summary:
+============================================
+FLASH used for binary:  (Including only the sections: .text, _cc_handlers, .ARM.exidx, .data)
+   188148
+FLASH uses for storage: (Including only the sections: .nvm3App, .simee)
+   49152
+SRAM usage:             (Including only the sections: .data, .bss, .heap, .stack_dummy, .reset_info)
+   31588
+

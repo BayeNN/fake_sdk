@@ -1,0 +1,24 @@
+id: "wisun_slip_backhaul"
+label: "Wi-SUN BR Backhaul Slip"
+description: "Provide Wi-SUN Border Router Backhaul thourgh Slip"
+package: "wisun"
+category: "Wi-SUN"
+quality: "production"
+root_path: "protocol/wisun/wisun"
+
+requires:
+  - name: "wisun_br_stack"
+
+provides:
+  - name: "wisun_slip_backhaul"
+
+define:
+  - name: "ENABLE_SLIP_BACKHAUL"
+
+source:
+  # Nanostack source files
+  - path: "src/border_router/Slip.c"
+  - path: "inc/border_router/Slip.h"
+
+include:
+  - path: "inc/border_router/"

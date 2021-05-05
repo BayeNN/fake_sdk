@@ -1,0 +1,29 @@
+
+==========================================================
+The output of the size tool: (e.g. arm-none-ambi-size.exe)
+==========================================================
+
+ZW_SensorPir_7.16.0_678_EFR32ZG23_REGION_RU.elf  :
+section              size         addr
+.nvm3App           0x6000    0x806e000
+.simee             0xa000    0x8074000
+.text             0x30c64    0x8000000
+_cc_handlers         0x70    0x8030c64
+.ARM.exidx            0x8    0x8030cd4
+.data               0x7f8   0x20000000
+.bss               0x7abc   0x200007f8
+.heap               0x200   0x200082b8
+.stack_dummy        0x280   0x200082b8
+.ARM.attributes      0x36          0x0
+.comment             0x4d          0x0
+Total             0x49493
+
+The calculated FLASH and SRAM usage summary:
+============================================
+FLASH used for binary:  (Including only the sections: .text, _cc_handlers, .ARM.exidx, .data)
+   201940
+FLASH uses for storage: (Including only the sections: .nvm3App, .simee)
+   65536
+SRAM usage:             (Including only the sections: .data, .bss, .heap, .stack_dummy, .reset_info)
+   32572
+

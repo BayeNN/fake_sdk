@@ -1,0 +1,70 @@
+id: ot_cli_source
+label: CLI
+package: OpenThread
+category: OpenThread
+quality: production
+description: This component provides the OpenThread CLI. It requires that an OpenThread stack component be included with the project. If no OpenThread stack component is chosen, it will default to using the OpenThread stack for a Full Thread Device (FTD).
+provides:
+  - name: ot_cli
+requires:
+  - name: ot_stack
+recommends:
+  - id: ot_stack_ftd
+config_file:
+  - path: protocol/openthread/config/sl_openthread_ble_cli_config.h
+    condition:
+      - bluetooth_stack
+toolchain_settings:
+  - option: preinclude
+    value: sl_openthread_ble_cli_config.h
+    condition:
+      - bluetooth_stack
+include:
+  - path: util/third_party/openthread/src
+  - path: util/third_party/openthread/src/cli
+    file_list:
+      - path: cli.hpp
+      - path: cli_coap.hpp
+      - path: cli_coap_secure.hpp
+      - path: cli_commissioner.hpp
+      - path: cli_config.h
+      - path: cli_dataset.hpp
+      - path: cli_joiner.hpp
+      - path: cli_network_data.hpp
+      - path: cli_srp_client.hpp
+      - path: cli_srp_server.hpp
+      - path: cli_udp.hpp
+      - path: x509_cert_key.hpp
+source:
+      - path: util/third_party/openthread/examples/apps/cli/cli_uart.cpp
+      - path: util/third_party/openthread/src/cli/cli.cpp
+      - path: util/third_party/openthread/src/cli/cli_coap.cpp
+      - path: util/third_party/openthread/src/cli/cli_coap_secure.cpp
+      - path: util/third_party/openthread/src/cli/cli_commissioner.cpp
+      - path: util/third_party/openthread/src/cli/cli_dataset.cpp
+      - path: util/third_party/openthread/src/cli/cli_joiner.cpp
+      - path: util/third_party/openthread/src/cli/cli_network_data.cpp
+      - path: util/third_party/openthread/src/cli/cli_srp_client.cpp
+      - path: util/third_party/openthread/src/cli/cli_srp_server.cpp
+      - path: util/third_party/openthread/src/cli/cli_udp.cpp
+      - path: protocol/openthread/src/cli/bluetooth_cli.c
+        condition:
+          - bluetooth_stack
+template_file:
+  - path: protocol/openthread/src/template/sl_ot_custom_cli.c.jinja
+template_contribution:
+  - name: component_catalog
+    value: openthread_cli
+  - name: ot_init
+    value: sl_ot_cli_init
+    priority: 20
+  - name: ot_init
+    value: sl_ot_custom_cli_init
+    priority: 21
+  - name: sl_ot_cli_command
+    condition:
+      - bluetooth_stack
+    value:
+      name: "ble"
+      handler: "bleCommand"
+      macro: "SL_OPENTHREAD_BLE_CLI_ENABLE"

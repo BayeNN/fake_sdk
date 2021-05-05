@@ -1,0 +1,31 @@
+id: "wisun_common_library"
+label: "Wi-SUN Stack  (Library)"
+package: "wisun"
+category: "Wi-SUN"
+quality: "production"
+description: "Provide Wi-SUN stack library"
+root_path: "protocol/wisun/wisun"
+
+requires: 
+  - name: "wisun_stack"
+
+provides:
+  - name: "wisun_implementation"
+
+library:
+  - path: "libwisun_micriumos_gcc.a"
+    condition:
+      - "toolchain_gcc"
+      - "micriumos_kernel"
+  - path: "libwisun_freertos_gcc.a"
+    condition:
+      - "toolchain_gcc"
+      - "freertos"
+  - path: "libwisun_micriumos_iar.a"
+    condition:
+      - "toolchain_iar"
+      - "micriumos_kernel"
+  - path: "libwisun_freertos_iar.a"
+    condition:
+      - "toolchain_iar"
+      - "freertos"

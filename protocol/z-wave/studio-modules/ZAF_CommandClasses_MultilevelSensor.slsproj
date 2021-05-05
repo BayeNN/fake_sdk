@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project id="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.MultilevelSensor" label="Z-Wave ZAF CommandClasses MultilevelSensor" contentRoot="$(sdkInstallationPath:default())/protocol/z-wave/ZAF/CommandClasses/MultilevelSensor">
+  <property key="category" value="efm32|Z-wave"/>
+  <folder name="ZAF_CommandClasses_MultilevelSensor" uri="." includeAllFiles="true" />
+  <includePath uri="." />
+</project>

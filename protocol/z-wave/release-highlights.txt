@@ -1,0 +1,16 @@
+Z-Wave and Z-Wave Long Range SDK v7.15.4.0 GA is certified according to the 2020D Specification Release.
+
+What's new in Z-Wave and Z-Wave Long Range 700 SDK v7.15.4.0:
+* Added Security Information section to release notes.
+* Various bug fixes, refer to release notes.
+
+What's new in Z-Wave and Z-Wave Long Range 700 SDK v7.15.2.0:
+* All Apps are Z-Wave certified and Z-Wave Long Range pre-certified.
+* New Z-Wave PC-based Controller v5.51 supporting Z-Wave Long Range.
+
+What's new in Z-Wave and Z-Wave Long Range 700 SDK v7.15.1.0:
+* New Z-Wave Long Range protocol for the US market.
+* All Apps support both Z-Wave and Z-Wave Long Range.
+* New Z-Wave PC-based Controller v5.50 supporting Z-Wave Long Range.
+* New Z-Wave PC-based Zniffer v4.65 supporting Z-Wave Long Range.
+* New Network Analyzer supporting Z-Wave and Z-Wave Long Range.
